@@ -20,4 +20,4 @@ As a clinical professional transitioning into spatial data science, I built this
 4. **Spatial Overlay**: Combined the socio-economic choropleth map with the drive-time polygons to visually isolate access gaps.
 
 ## View the Map
-[Click here to view the live interactive web map](LINK_TO_YOUR_GITHUB_PAGES_URL)
+[Click here to view the live interactive web map](https://ryan-tobin.github.io/cancer-care-desert-atlas/)
