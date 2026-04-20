@@ -57,21 +57,23 @@
 <body>
 
     <div class="toggle-container">
-        <button id="btn-driving" class="active" onclick="switchMap('driving.html', 'btn-driving')">Driving Map</button>
+        <button id="btn-driving" onclick="switchMap('driving.html', 'btn-driving')">Driving Map</button>
+        
         <button id="btn-walking" onclick="switchMap('walking.html', 'btn-walking')">Walking Map</button>
-        <button id="btn-brief" onclick="switchMap('brief.html', 'btn-brief')" style="background-color: #2c3e50; color: white; border-color: #2c3e50;">Read Policy Brief</button>
+        
+        <button id="btn-brief" class="active" onclick="switchMap('brief.html', 'btn-brief')">Read Policy Brief</button>
     </div>
 
-    <iframe id="map-frame" src="driving.html"></iframe>
+    <iframe id="map-frame" src="brief.html"></iframe>
 
     <script>
         function switchMap(mapUrl, activeBtnId) {
-            // Change the iframe source
             document.getElementById('map-frame').src = mapUrl;
 
-            // Update button styles to show which is active
             document.getElementById('btn-driving').classList.remove('active');
             document.getElementById('btn-walking').classList.remove('active');
+            document.getElementById('btn-brief').classList.remove('active');
+            
             document.getElementById(activeBtnId).classList.add('active');
         }
     </script>
