@@ -1,0 +1,5 @@
+.env
+chop_*
+final_*
+*.json
+project1_*
